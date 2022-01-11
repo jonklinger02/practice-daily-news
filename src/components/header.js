@@ -7,24 +7,18 @@ const Header = () => {
     <>
       <Navbar className="yellotail">
         <LinkContainer to="/">
-          <Navbar.Brand>
-            <h1>The Daily News</h1>
-          </Navbar.Brand>
+          <h1>The Daily News</h1>
         </LinkContainer>
       </Navbar>
       <Nav>
         <Nav.Item>
           <LinkContainer to="/home">
-            <Navbar.Brand>
-              <Nav.Link>Home</Nav.Link>
-            </Navbar.Brand>
+            <Nav.Link>Home</Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
           <LinkContainer to="/contacts">
-            <Navbar.Brand>
-              <Nav.Link>Contacts</Nav.Link>
-            </Navbar.Brand>
+            <Nav.Link>Contacts</Nav.Link>
           </LinkContainer>
         </Nav.Item>
       </Nav>
