@@ -28,7 +28,10 @@ export const getPosts = async (
 
 export const addNewsletter = async (data) => {
   try {
-    const findUser = await axios.get(`${URL_SERV}/newsletter?_email=${data}`);
+    const findUser = await axios.get(
+      `${URL_SERV}/newsletter?_email=${data.email}`
+    );
+
     if (!Array.isArray(findUser.data) || !findUser.data.length) {
       //add user
       const response = await axios({
